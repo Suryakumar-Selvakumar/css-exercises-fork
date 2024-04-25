@@ -5,10 +5,21 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "chrome",
+            "name": "Launch Chrome",
             "request": "launch",
-            "name": "Open index.html",
-            "file": "/home/surya/repos/css-exercises-fork/foundations/01-css-methods/index.html"
+            "type": "chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}",
+            "runtimeExecutable": "/usr/bin/microsoft-edge-stable /usr/share/man/man1/microsoft-edge-stable.1.gz"
+        },
+        {
+            "name": "Launch Edge",
+            "request": "launch",
+            "type": "msedge",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}",
+            "runtimeExecutable": "/usr/bin/google-chrome-stable /usr/share/man/man1/google-chrome-stable.1.gz"
         }
+
     ]
 }
