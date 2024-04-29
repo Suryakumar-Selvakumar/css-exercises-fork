@@ -60,10 +60,36 @@ button.continue {
   background: royalblue;
   border: 1px solid royalblue;
   color: white;
+
 }
 
 button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+/*Solution*/
+
+.modal {
+  display: flex;
+  padding: 16px;
+  gap: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  align-items: center;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.icon {
+  flex-shrink: 0;
+}
+
+.text {
+  margin-bottom:16px;
 }
