@@ -129,7 +129,20 @@ div.header > div.menu > ul > li {
   grid-row: 2 / 4;
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 3rem;
+}
+
+.sidebar > .photo {
+  display: grid;
+  align-items: center;
+  font-size: clamp(1rem, 5vw + 1rem, 20px);
+}
+
+.sidebar > .side-content {
+  display: grid;
+  align-items: center;
+  font-size: clamp(1rem, 5vw + 1rem, 20px);
 }
 
 .nav {
@@ -149,9 +162,24 @@ div.header > div.menu > ul > li {
 
 .article {
   display: grid;
-  gap: 14px;
+  gap: 15px;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-auto-rows: minmax(200px, 1fr);
+}
+
+.card {
+  display: grid;
+  grid-template-rows: 0.3fr 0.7fr;
+  align-items: center;
+}
+
+div.card > .title {
+  font-size: clamp(1rem, 5vw + 1.5rem, 24px);
+}
+
+div.card > .title + p {
+  font-size: clamp(0.8rem, 5vw + 1rem, 1.25rem);
+  align-self: start;
 }
 
 .footer {
@@ -160,5 +188,5 @@ div.header > div.menu > ul > li {
 }
 
 .footer > p {
-  font-size: clamp(1rem, 6vw + 1.5rem, 25px);
+  font-size: clamp(1rem, 6vw + 1.5rem, 2rem);
 }
